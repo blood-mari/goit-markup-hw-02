@@ -1,0 +1,9 @@
+body {
+  color: #212121;
+  font-style: normal;
+}
+
+a:hover,
+a:focus {
+  color: #2196f3;
+}

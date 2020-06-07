@@ -4,125 +4,195 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
     <header>
       <nav>
-        <a href="./index.html"
-          ><span class="logo-blue">Web</span>
-          <span class="logo-black">Studio</span></a
+        <a href="./index.html" class="logo link"
+          ><span>Web</span> <span class="header-logo-tail link">Studio</span></a
         >
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="./portfolio.html">Портфолио</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="site-nav">
+          <li><a href="./index.html" class="link">Студия</a></li>
+          <li><a href="./portfolio.html" class="link current">Портфолио</a></li>
+          <li><a href="" class="link">Контакты</a></li>
         </ul>
 
         <ul>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>Примеры работ</h1>
-      <ul>
-        <li><h2>Все</h2></li>
-        <li><h2>Веб-сайты</h2></li>
-        <li><h2>Приложения</h2></li>
-        <li><h2>Дизайн</h2></li>
-        <li><h2>Маркетинг</h2></li>
-      </ul>
-
       <section>
+        <h1>Примеры работ</h1>
         <ul>
           <li>
-            <img src="./" alt="" width="370" />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
-            <p>
-              Технокряк это современная площадка распространения коронавируса.
-              Компании используют эту платформу для цифрового шпионажа и атак на
-              защищённые сервера конкурентов.
-            </p>
+            <button class="button"><h2>Все</h2></button>
           </li>
           <li>
-            <img src="./images/project-2.jpg" alt="Баскетбол" width="370" />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <button class="button"><h2>Веб-сайты</h2></button>
           </li>
           <li>
-            <img
-              src="./images/project-3.jpg"
-              alt="
-            Лого ресторана"
-              width="370"
-            />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <button class="button"><h2>Приложения</h2></button>
           </li>
           <li>
-            <img
-              src="./images/project-4.jpg"
-              alt="
-            Наушники"
-              width="370"
-            />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <button class="button"><h2>Дизайн</h2></button>
           </li>
           <li>
-            <img
-              src="./images/project-5.jpg"
-              alt="
-            Коробки"
-              width="370"
-            />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <button class="button"><h2>Маркетинг</h2></button>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="">
+              <img src="./images/project-1.jpg" alt="" width="370" />
+              <h3 class="work-title">Технокряк</h3>
+              <p>Веб-сайт</p>
+              <p>
+                Технокряк это современная площадка распространения коронавируса.
+                Компании используют эту платформу для цифрового шпионажа и атак
+                на защищённые сервера конкурентов.
+              </p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/project-6.jpg"
-              alt="
-            Десктоп"
-              width="370"
-            />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <a href="">
+              <img src="./images/project-2.jpg" alt="Баскетбол" width="370" />
+              <h3 class="work-title">Постер New Orlean vs Golden Star</h3>
+              <p>Дизайн</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+                reprehenderit aspernatur ut ullam error perspiciatis sint.
+              </p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/project-7.jpg"
-              alt="
-            Иллюстраци"
-              width="370"
-            />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <a href="">
+              <img
+                src="./images/project-3.jpg"
+                alt="
+                    Лого ресторана"
+                width="370"
+              />
+              <h3 class="work-title">Ресторан Seafood</h3>
+              <p>Приложение</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                ipsam dignissimos ea beatae harum debitis mollitia voluptates.
+              </p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/project-8.jpg"
-              alt="
-            Бирка"
-              width="370"
-            />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <a href="">
+              <img
+                src="./images/project-4.jpg"
+                alt="
+                    Наушники"
+                width="370"
+              />
+              <h3 class="work-title">Проект Prime</h3>
+              <p>Маркетинг</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
           </li>
           <li>
-            <img
-              src="./images/project-9.jpg"
-              alt="
-            Ноутбук"
-              width="370"
-            />
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
+            <a href="">
+              <img
+                src="./images/project-5.jpg"
+                alt="
+                    Коробки"
+                width="370"
+              />
+              <h3 class="work-title">Проект Boxes</h3>
+              <p>Приложение</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/project-6.jpg"
+                alt="
+                    Десктоп"
+                width="370"
+              />
+              <h3 class="work-title">Inspiration has no Borders</h3>
+              <p>Веб-сайт</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/project-7.jpg"
+                alt="
+                    Иллюстраци"
+                width="370"
+              />
+              <h3 class="work-title">Издание Limited Edition</h3>
+              <p>Дизайн</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/project-8.jpg"
+                alt="
+                    Бирка"
+                width="370"
+              />
+              <h3 class="work-title">Проект LAB</h3>
+              <p>Маркетинг</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img
+                src="./images/project-9.jpg"
+                alt="
+                    Ноутбук"
+                width="370"
+              />
+              <h3 class="work-title">Growing Business</h3>
+              <p>Приложение</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                aperiam sit nam eveniet praesentium nostrum sapiente rem quo.
+              </p>
+            </a>
           </li>
         </ul>
       </section>
@@ -131,12 +201,20 @@
     <!-- Подвал -->
     <footer>
       <div>
-        <a href="index.html"><span>Web</span> Studio</a>
-        <address>
+        <a href="./index.html" class="logo link"
+          ><span>Web</span> <span class="footer-logo-tail link">Studio</span></a
+        >
+        <address class="address">
           г. Киев, пр-т Леси Украинки, 26 <br />
           <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <li>
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </li>
           </ul>
         </address>
       </div>
@@ -144,10 +222,16 @@
         <p>присоединяйтесь</p>
         <ul>
           <!-- aria-label -тэг для подписи ссылки-иконки или кнопки-иконки, нужен для читалок и индексаторов, воспринимается ими вместо текста/картинки, видимой посетителю сайта -->
-          <li><a href="" aria-label="Instagram link">Instagram</a></li>
-          <li><a href="" aria-label="Twitter link">Twitter</a></li>
-          <li><a href="" aria-label="Facebook link">Facebook</a></li>
-          <li><a href="" aria-label="LinkedIn link">LinkedIn</a></li>
+          <li>
+            <a href="" aria-label="Instagram link" class="link">Instagram</a>
+          </li>
+          <li><a href="" aria-label="Twitter link" class="link">Twitter</a></li>
+          <li>
+            <a href="" aria-label="Facebook link" class="link">Facebook</a>
+          </li>
+          <li>
+            <a href="" aria-label="LinkedIn link" class="link">LinkedIn</a>
+          </li>
         </ul>
       </div>
       <div>

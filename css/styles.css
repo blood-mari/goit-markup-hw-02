@@ -1,9 +1,119 @@
-body {
-  color: #212121;
-  font-style: normal;
+/* Main text color: black #212121 */
+
+/* link accent  blue #2196f3*/
+
+/* text paragraph grey3 #757575 */
+
+:root {
+  --main-text-color: #212121;
+  --main-background-color: #ffffff;
+  --paragraph-text-color: #757575;
+  --accent-text-color: #2196f3;
+  --dark-theme-text-color: #ffffff;
+  --footer-contacts-color:color: rgba(255, 255, 255, 0.6);
+  --plain-button-color: #F5F4FA;
 }
 
-a:hover,
-a:focus {
-  color: #2196f3;
+body {
+  font-style: normal;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+
+}
+
+/* Logo site header */
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Raleway', sans-serif;
+  color: var(--accent-text-color);
+}
+
+.header-logo-tail {
+  color: var(--main-text-color);
+
+}
+
+.logo:hover,
+.logo:focus {
+  color: var(--accent-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-text-color);
+}
+
+/* Hero Section */
+.hero-title {
+  font-size: 44px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--dark-theme-text-color);
+  background-color: var(--paragraph-text-color);
+}
+
+/* Order the option - main button */
+.button {
+ color: var(--main-text-color);
+ background-color: var(--plain-button-color);
+font-size: 16px;
+}
+
+.button.primary {
+color: var(--dark-theme-text-color);
+ background-color: var(--accent-text-color);
+}
+
+.button:focus,
+.button:hover
+{
+    color: var(--dark-theme-text-color);
+    background-color: var(--accent-text-color);
+}
+
+/* Section h2 headers */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+/* Section h3 headers */
+.features .title {
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+/* Graphic section group */
+.examples .examples-title {
+    font-weight: bold;
+text-transform: uppercase;
+}
+
+/* Logo site footer */
+
+.footer-logo-tail {
+  color: var(--dark-theme-text-color);
+  background-color: var(--paragraph-text-color);
+}
+
+.address {
+    font-style: normal;
+}
+
+/* Portfolio page style */
+
+
+/* Portfolio title style */
+
+.work-title {
+    font-size: 18px;
 }

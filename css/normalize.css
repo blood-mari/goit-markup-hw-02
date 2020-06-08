@@ -95,7 +95,15 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+.title-form {
+  text-transform: uppercase;
+}
+
+footer > p {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /**

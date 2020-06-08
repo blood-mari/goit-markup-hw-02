@@ -12,10 +12,12 @@
   --dark-theme-text-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --plain-button-color: #f5f4fa;
+  --background-footer-color: #2f303a;
 }
 
 body {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   line-height: 1.2;
@@ -43,23 +45,29 @@ h3 {
   color: var(--main-text-color);
 }
 
-.logo:hover,
 .logo:focus {
   color: var(--accent-text-color);
 }
 
-.link:hover,
 .link:focus {
   color: var(--accent-text-color);
 }
 
 .site-nav,
-.contacts {
+.contacts-header {
   font-weight: 500;
 }
 
 .site-nav .link.current {
   color: var(--accent-text-color);
+}
+
+.site-nav a {
+  color: var(--main-text-color);
+}
+
+.contacts-header .link {
+  color: var(--paragraph-text-color);
 }
 
 /* Hero Section */
@@ -93,8 +101,7 @@ h3 {
   line-height: 1.9;
 }
 
-.button:focus,
-.button:hover {
+.button:focus {
   color: var(--dark-theme-text-color);
   background-color: var(--accent-text-color);
 }
@@ -121,6 +128,7 @@ button {
 
 /* Graphic section group */
 .examples .examples-title {
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--dark-theme-text-color);
@@ -128,21 +136,35 @@ button {
 }
 
 /* staff style */
-.staff h3,
-.staff p {
+.staff h3 {
+  font-size: 16px;
   font-weight: 500;
+}
+.staff p {
+  font-size: 16px;
+  color: var(--paragraph-text-color);
 }
 
 /* Logo site footer */
 
+.footer {
+  background-color: var(--background-footer-color);
+  color: var(--dark-theme-text-color);
+}
+
 .footer-logo-tail {
   color: var(--dark-theme-text-color);
-  background-color: var(--paragraph-text-color);
 }
 
 .address {
   font-style: normal;
   letter-spacing: 0.06em;
+}
+
+.mail,
+.tel {
+  color: var(--footer-contacts-color);
+  line-height: 1.7;
 }
 
 .join-us p {
@@ -156,6 +178,7 @@ button {
 
 .work-title {
   font-size: 18px;
+  color: var(--main-text-color);
   line-height: 2;
   letter-spacing: 0.06em;
 }
@@ -164,6 +187,11 @@ button {
   font-size: 16px;
   line-height: 1.88;
 }
+
+.work-type {
+  color: var(--paragraph-text-color);
+}
+
 h2 .description {
   font-size: 18px;
   line-height: 1.56;

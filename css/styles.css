@@ -13,15 +13,17 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --plain-button-color: #f5f4fa;
   --background-footer-color: #2f303a;
+  --font-body: "Roboto", sans-serif;
+  --font-logo: "Raleway", sans-serif;
 }
 
 body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  font-family: var(--font-body);
   color: var(--main-text-color);
   background-color: var(--main-background-color);
 }
@@ -36,7 +38,7 @@ h3 {
 .logo {
   font-weight: 700;
   font-size: 26px;
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-logo);
   color: var(--accent-text-color);
   letter-spacing: 0.03em;
 }
@@ -46,10 +48,6 @@ h3 {
 }
 
 .logo:focus {
-  color: var(--accent-text-color);
-}
-
-.link:focus {
   color: var(--accent-text-color);
 }
 
@@ -66,8 +64,13 @@ h3 {
   color: var(--main-text-color);
 }
 
-.contacts-header .link {
+.contacts-header a {
   color: var(--paragraph-text-color);
+}
+
+.link:focus,
+.link:hover {
+  color: var(--accent-text-color);
 }
 
 /* Hero Section */
@@ -101,7 +104,8 @@ h3 {
   line-height: 1.9;
 }
 
-.button:focus {
+.button:focus,
+.button:hover {
   color: var(--dark-theme-text-color);
   background-color: var(--accent-text-color);
 }

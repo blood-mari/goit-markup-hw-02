@@ -128,6 +128,7 @@ button {
 
 .features p {
   line-height: 1.7;
+  color: var(--paragraph-text-color);
 }
 
 /* Graphic section group */
